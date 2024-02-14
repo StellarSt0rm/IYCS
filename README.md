@@ -18,14 +18,14 @@ Improved Version Of "YCS - Youtube Comment Search" Extension.
     - **Chat Replay**: (Not yet implemented) Enables automatic loading of chat replay / live chat.
     - **Transcript**: Enables automatic loading of the transcript.
     - **Limit Style**: Choose between two options:
-      - "Stop Loading If Limit Reached": Ceases loading once the limit is reached.
+      - "Stop Loading If Limit Reached": Ceases loading once the limit is reached. (Default)
       - "Don't Load If Count Above Limit": Prevents loading if the comment count exceeds the limit.
   - **Other**:
     - **Clear Button Action**: Define the action for the Clear button:
-      - "Clear Filters And Search": Resets both filters and search queries.
+      - "Clear Filters And Search": Resets both filters and search queries. (Default)
       - "Clear Search": Clears only the search query.
       - "Clear Filters": Clears selected filters.
     - **Start Status**: Choose the initial UI state:
-      - "Maximized": The UI starts in a maximized state.
+      - "Maximized": The UI starts in a maximized state. (Default)
       - "Minimized": The UI starts in a minimized state.
 
