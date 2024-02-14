@@ -34,4 +34,4 @@ Source will be shared when the extension is finished.
 ### TODO
 - Caching (Not likely)
 - Support Live Replay
-- Light Mode Support ._.
+- Light Mode Support (My Eyes Are Gonna **BURN** While Making This)
