@@ -14,9 +14,9 @@ Improved Version Of "YCS - Youtube Comment Search" Extension.
 ### Options:
 - **Expanded Settings**: The options menu currently offers 6 settings across 2 sections:
   - **Autoload**:
-    - **Comments**: Enables automatic loading of comments. Set a limit for loaded comments.
-    - **Chat Replay**: (Not yet implemented) Enables automatic loading of chat replay / live chat.
-    - **Transcript**: Enables automatic loading of the transcript.
+    - **Comments**: Enables automatic loading of comments. Set a limit for loaded comments. (Default: off)
+    - **Chat Replay**: (Not yet implemented) Enables automatic loading of chat replay / live chat. (Default: off)
+    - **Transcript**: Enables automatic loading of the transcript. (Default: off)
     - **Limit Style**: Choose between two options:
       - "Stop Loading If Limit Reached": Ceases loading once the limit is reached. (Default)
       - "Don't Load If Count Above Limit": Prevents loading if the comment count exceeds the limit.
