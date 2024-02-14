@@ -1,7 +1,7 @@
 # IYCS (&nbsp; *(Improved)* Youtube Comment Search &nbsp;)
 Improved Version Of "YCS - Youtube Comment Search" Extension.
 
-This extension improves:
+This version improves:
 - Filters:
   - Filters now have 3 sections "Filters", "Sort Method" and "Other"
     - "Filters", All of the filters are pairable with eachother, so you can do "Hearted" and "Links", which will show all that are Hearted and contain Links
