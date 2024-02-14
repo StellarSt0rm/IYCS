@@ -29,3 +29,6 @@ Improved Version Of "YCS - Youtube Comment Search" Extension.
       - "Maximized": The UI starts in a maximized state. (Default)
       - "Minimized": The UI starts in a minimized state.
 
+### TODO
+- Caching (Not likely)
+- Support Live Replay
