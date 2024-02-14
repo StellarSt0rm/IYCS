@@ -12,7 +12,7 @@ Improved Version Of "YCS - Youtube Comment Search" Extension.
   - **Other**: Includes "All" to display all items, and "Clear" to reset selected filters and search (configurable in options).
 
 ### Options:
-- **Expanded Settings**: The options menu offers 6 settings across 2 sections:
+- **Expanded Settings**: The options menu currently offers 6 settings across 2 sections:
   - **Autoload**:
     - **Comments**: Enables automatic loading of comments. Set a limit for loaded comments.
     - **Chat Replay**: (Not yet implemented) Enables automatic loading of chat replay / live chat.
