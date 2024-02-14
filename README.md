@@ -32,6 +32,6 @@ Source will be shared when the extension is finished.
       - "Minimized": The UI starts in a minimized state.
 
 ### TODO
-- Caching (Not likely)
+- Caching (Not Likely)
 - Support Live Replay
 - Light Mode Support (My Eyes Are Gonna **BURN** While Making This)
