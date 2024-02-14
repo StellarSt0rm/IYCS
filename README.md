@@ -34,3 +34,4 @@ Source will be shared when the extension is finished.
 ### TODO
 - Caching (Not likely)
 - Support Live Replay
+- Light Mode Support (...)
