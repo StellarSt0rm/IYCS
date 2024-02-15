@@ -19,7 +19,7 @@ Source will be shared when the extension is finished.
     - **Comments**: Enables automatic loading of comments. You can set a limit for how many comments can be loaded (Defaults to no limit). (Default: off)
     - **Chat Replay**: (Not yet implemented) Enables automatic loading of chat replay / live chat. (Default: off)
     - **Transcript**: Enables automatic loading of the transcript. (Default: off)
-    - **Limit Style**: Choose between two options:
+    - **Limit Style**: Change how limiting works:
       - "Stop Loading If Limit Reached": Ceases loading once the limit is reached. (Default)
       - "Don't Load If Count Above Limit": Prevents loading if the comment count exceeds the limit.
   - **Other**:
