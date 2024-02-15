@@ -31,7 +31,7 @@ Source will be shared when the extension is finished.
       - "Maximized": The UI starts in a maximized state. (Default)
       - "Minimized": The UI starts in a minimized state.
 
-### TODO
+## TODO
 - Caching (Not Likely)
 - Support Live Replay
 - Light Mode Support (My Eyes Are Gonna **BURN** While Making This)
