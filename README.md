@@ -16,7 +16,7 @@ Source will be shared when the extension is finished.
 ### Options:
 - **Expanded Settings**: The options menu currently offers 6 settings across 2 sections:
   - **Autoload**:
-    - **Comments**: Enables automatic loading of comments. You can set a limit for loaded comments (Defaults to no limit). (Default: off)
+    - **Comments**: Enables automatic loading of comments. You can set a limit for how many comments can be loaded (Defaults to no limit). (Default: off)
     - **Chat Replay**: (Not yet implemented) Enables automatic loading of chat replay / live chat. (Default: off)
     - **Transcript**: Enables automatic loading of the transcript. (Default: off)
     - **Limit Style**: Choose between two options:
