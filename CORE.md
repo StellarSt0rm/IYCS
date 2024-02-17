@@ -29,9 +29,11 @@ And you can add another one if you dont want pretty print (ex: "1.6K")
 More data may be appended at the end of the body, outside of `context`
 
 ## Video Details | Comments
-Youtube uses pagination for comments, that's why we need "continuation tokens", to get the first one you need to send a POST request to `youtubei/v1/next`
+Youtube uses pagination for comments, that's why we need "continuation tokens", to get the first one you need to send a request to `youtubei/v1/next`
+
 For this request you need to include `videoId` to the body, with the ID of the video (what's after `watch?v=`)
 
+<br>
 This first request will return video data, from which you can get:
 
 - Transcript token
