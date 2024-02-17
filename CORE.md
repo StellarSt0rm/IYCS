@@ -34,6 +34,6 @@ For this request you need to include `videoId` to the body, with the ID of the v
 
 This first request will return video data, from which you can get:
 
-- Transcript continuation token
+- Transcript token
 - Initial comments continuation token
 - \[Other basic video data (likes, comment count, etc)\]
