@@ -13,12 +13,12 @@ Most requests are POST request, the basic body for the requests is:
 ! `clientVersion` number may change in the future
 
 <br>
-You also need to provide the API key as a url param:
+You also need to provide the API key as a URL param:
 
 `key=AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8`
 
 <br>
-And you can add another one if you dont want pretty print (ex: "1.6K")
+And you can add another param if you dont want pretty print (ex: "1.6K")
 
 `prettyPrint=false`
 
