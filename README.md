@@ -1,8 +1,6 @@
 # IYCS (&nbsp; *(Improved)* Youtube Comment Search &nbsp;)
 Improved Version Of "YCS - Youtube Comment Search" Extension.
 
-Source will be shared when the extension is finished.
-
 For instructions on how to use the `youtubei/v1` API go to [CORE.md](https://github.com/StellarSt0rm/IYCS/blob/main/CORE.md)
 
 <br>
