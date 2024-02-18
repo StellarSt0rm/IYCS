@@ -3,6 +3,11 @@ Improved Version Of "YCS - Youtube Comment Search" Extension.
 
 Source will be shared when the extension is finished.
 
+Progress:
+
+- CURRENT: First Version (Bad Code)
+- NEXT: Second Version (Rework Code)
+
 <br>
 
 ## Enhancements in IYCS
