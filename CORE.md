@@ -26,6 +26,10 @@ And you can add another one if you dont want pretty print (ex: "1.6K")
 
 <br>
 
+All appearances of the variable `data` is from `fetch().then(res => res.json).then(data => {})`
+
+<br>
+
 More data may be appended at the end of the body, outside of `context`
 
 ## Video Details | Comments
@@ -39,3 +43,13 @@ This first request will return video data, from which you can get:
 - Transcript token
 - Initial comments continuation token
 - \[Other basic video data (likes, comment count, etc)\]
+
+<br>
+
+I recommend too look through the response yourself to get the paths of what you want, but the paths for the transcript token, and inital comments continuation, code snippet to get them:
+```
+contents = data.contents.twoColumnWatchNextResults.results.results.contents
+
+commentsToken = contents.find(function(obj) {return obj.itemSectionRenderer?.targetId}).itemSectionRenderer.contents[0].continuationItemRenderer.continuationEndpoint.continuationCommand.token
+transcriptToken = data.playerOverlays.playerOverlayRenderer.shareButton.buttonRenderer.navigationEndpoint.shareEntityServiceEndpoint.serializedShareEntity
+```
