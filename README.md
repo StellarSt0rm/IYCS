@@ -42,4 +42,4 @@ Progress:
 - Caching (Not Likely)
 - Support Chat Replay
 - Light Mode Support (My Eyes Are Gonna **BURN** While Making This)
-- Figure out how to get transcript
+- Rework Code, Check `backup/IYCS.zip` To Understand
