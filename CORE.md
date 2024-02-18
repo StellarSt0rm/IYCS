@@ -47,7 +47,7 @@ This first request will return video data, from which you can get:
 <br>
 
 I recommend too look through the response yourself to get the paths of what you want, but the paths for the transcript token, and inital comments continuation, code snippet to get them:
-```
+```js
 contents = data.contents.twoColumnWatchNextResults.results.results.contents
 
 commentsToken = contents.find(function(obj) {return obj.itemSectionRenderer?.targetId}).itemSectionRenderer.contents[0].continuationItemRenderer.continuationEndpoint.continuationCommand.token
@@ -76,6 +76,20 @@ items[*].commentThreadRenderer.replies?.commentRepliesRenderer.contents[0].conti
 items[*].commentThreadRenderer.comment.commentRenderer
 ```
 
+### Replies
+For the replies it's the same as the comments, but you have to give the replies token for the comment you wanna get the replies from
+
+The paths are Almost* the same, but they vary a bit:
+```
+// You still get the endpoints the same way
+
+// To get the contination token (If there are more than 20 replies in the parent comment)
+items.at(-1).continuationItemRenderer.button.buttonRenderer.command.continuationCommand.token
+
+// And all the data for the comment can be found in this path
+items[*].commentRenderer
+```
+
 ## Transcript
 To get the transcript you have to send a request to `youtubei/v1/get_transcript`
 
@@ -96,3 +110,7 @@ for(i = 0; i < rawTranscript.length; i++) {
 		})
 	}
 ```
+
+
+## End
+And that's all i have for now, when i figure out Chat Replay / Live Chat i will update this file
