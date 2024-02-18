@@ -1,7 +1,7 @@
 # Core | Instructions for getting data from `youtubei/v1`
 
 ## Requests
-Most requests are POST request, the basic body for the request to get accepted is:
+Most requests are POST request, the basic body for the requests is:
 ```json
 "context": {  
 		"client": {
