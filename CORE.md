@@ -54,6 +54,28 @@ commentsToken = contents.find(function(obj) {return obj.itemSectionRenderer?.tar
 transcriptToken = data.playerOverlays.playerOverlayRenderer.shareButton.buttonRenderer.navigationEndpoint.shareEntityServiceEndpoint.serializedShareEntity
 ```
 
+## Comments
+To get the comments you have to send a request to `youtubei/v1/next`
+
+For this request you need to incldude `continuation` to the body, with the `commentsToken`
+
+<br>
+
+Here's a small code snippet on the paths for the most important values:
+```js
+endpoint = data.onResponseReceivedEndpoints.at(-1) // Youtubei returns two objects for the first two requests, this is to get the last one
+items = (endpoint.reloadContinuationItemsCommand || endpoint.appendContinuationItemsAction).continuationItems
+
+// Get the continuation, the other objects are all comments
+items.at(-1).continuationItemRenderer.continuationEndpoint.continuationCommand.token
+
+// To get the replies for a comment, you can find the replies token through this path
+items[*].commentThreadRenderer.replies?.commentRepliesRenderer.contents[0].continuationItemRenderer.continuationEndpoint.continuationCommand.token
+
+// And all the rest of the data of a comment can be get from this path
+items[*].commentThreadRenderer.comment.commentRenderer
+```
+
 ## Transcript
 To get the transcript you have to send a request to `youtubei/v1/get_transcript`
 
@@ -62,7 +84,7 @@ For this request you need to include `params` to the body, with the `transcriptT
 <br>
 
 And here i provide a code snippet to parse the transcript:
-```
+```js
 result = []
 rawTranscript = data.actions[0].updateEngagementPanelAction.content.transcriptRenderer.body.transcriptBodyRenderer.cueGroups
 for(i = 0; i < rawTranscript.length; i++) {
