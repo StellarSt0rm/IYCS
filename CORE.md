@@ -80,7 +80,7 @@ items[*].commentThreadRenderer.comment.commentRenderer
 For the replies it's the same as the comments, but you have to give the replies token for the comment you wanna get the replies from
 
 The paths are Almost* the same, but they vary a bit:
-```
+```js
 // You still get the endpoints the same way
 
 // To get the contination token (If there are more than 20 replies in the parent comment)
