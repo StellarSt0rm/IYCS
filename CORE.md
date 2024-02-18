@@ -10,7 +10,7 @@ Most requests are POST request, the basic body for the requests is:
 		}
 }
 ```
-! `clientVersion` number may need change in the future
+! `clientVersion` number may change in the future
 
 <br>
 You also need to provide the API key as a url param:
