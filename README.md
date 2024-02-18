@@ -15,7 +15,7 @@ Progress:
 ## Enhancements in IYCS
 
 ### Filters:
-- **Refined Organization**: Filters are categorized into three sections: "Filters", "Sort Method", and "Other".
+- **Refined Search**: Filters are categorized into three sections: "Filters", "Sort Method", and "Other".
   - **Filters**: All filters can be paired with each other, enabling simultaneous filtering. For instance, you can filter by "Hearted" and "Links" to view hearted items with links.
   - **Sort Method**: Sorting options are independent, except for "Sort Direction" which dictates the direction of the sorting.
   - **Other**: Includes "All" to display all items, and "Clear" to reset selected filters and search (configurable in options).
