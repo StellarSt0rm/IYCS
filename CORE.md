@@ -46,7 +46,7 @@ This first request will return video data, from which you can get:
 
 <br>
 
-I recommend too look through the response yourself to get the paths of what you want, but the paths for the transcript token, and inital comments continuation, code snippet to get them:
+I recommend to look through the response yourself to get the paths of what you want, but these are the paths of the Transcript token and initial Comments token:
 ```js
 contents = data.contents.twoColumnWatchNextResults.results.results.contents
 
