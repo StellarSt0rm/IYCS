@@ -5,7 +5,7 @@ For instructions on how to use the `youtubei/v1` API go to [CORE.md](https://git
 
 <br>
 
-Progress:
+Progress: (Curently Paused, i dont have much time to work on it, will continue working on it when i can)
 
 - CURRENT: First Version (Probably Bad Code)
 - NEXT: Second Version (Rework Code)
