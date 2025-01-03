@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<style>
+			html, body {
+				background: #23222b;
+				color: white;
+				font: caption;
+				height: 100%;
+				overflow: hidden;
+			}
+			div[checkbox="disabled"] label {
+				opacity: 0.4;
+			}
+			input[type="text"], select, #reset {
+				border: none;
+				outline: none;
+				border-radius: 5px;
+				padding: 2px 6px;
+				background: rgba(150,150,150,0.1);
+				color: white;
+			}
+			select, #reset {
+				border: 1px solid transparent;
+			}
+			select:hover, #reset:hover, select:focus-visible, #reset:focus-visible {
+				background: rgba(51, 51, 51, 0.7);
+				border: 1px solid rgba(200,200,200,0.1);
+				cursor: pointer;
+
+				&:focus-visible {
+					border-style: dashed;
+				}
+			}
+			#reset:hover {
+				background: rgba(100, 51, 51, 0.7);
+			}
+			#comments-limit {
+				width: 106px;
+			}
+			.options_field *:not(input){
+				margin-top: 2px;
+				margin-bottom: 2px;
+			}
+			input[type="text"]:disabled {
+				opacity: 0.4;
+			}
+		</style>
+	</head>
+	<body style="transform: translateY(-18px); padding: 5px;">
+		<div style="position: relative; z-index: 1; display: flex; justify-content: right; transform: translateY(28px); margin-right: 8px;"><button id="reset">Reset Settings</button></div>
+		<div style="overflow-y: scroll; max-height: 300px; transform: translateY(-20px);">
+			<div>
+				<h2>Autoload:</h2>
+				<div class="options_field">
+					<input id="comments" type="checkbox">
+					<label for="comments">Comments &nbsp;-&nbsp; </label>
+					<input id="comments-limit" type="text" placeholder="Comment Limit" title="Leave Empty If You Dont Want Any Limit, Only Numbers Allowed">
+				</div>
+				<div class="options_field">
+					<input id="chat" type="checkbox" class="checkbox" title="Not Implemented (Yet)">
+					<label for="chat">Chat Replay</label>
+				</div>
+				<div class="options_field">
+					<input id="transcript" type="checkbox">
+					<label for="transcript">Transcript</label>
+				</div>
+				<div class="options_field">
+					<p style="display: inline-block; padding-top: 8px;">Limit Style: &nbsp;</p>
+					<select id="limit-style" style="display: inline-block">
+						<option value="stop_load">Stop Loading If Limit Reached</option>
+						<option value="dont_load">Dont Load If Count Above Limit</option>
+					</select>
+				</div>
+			</div>
+			<div>
+				<h2>Other:</h2>
+				<div class="options_field">
+					<p style="display: inline-block">Clear Button Action: &nbsp;</p>
+					<select id="clean-action" style="display: inline-block">
+						<option value="both">Clear Filters And Search</option>
+						<option value="search">Clear Search</option>
+						<option value="filters">Clear Filters</option>
+					</select>
+				</div>
+				<div class="options_field">
+					<p style="display: inline-block">Start Status: &nbsp;</p>
+					<select id="start-status" style="display: inline-block">
+						<option value="max">Maximized</option>
+						<option value="min">Minimized</option>
+					</select>
+				</div>
+			</div>
+		</div>
+
+		<p style="transform: translateY(20px); margin: 0;">
+			<span style="height: 16px; width: 16px; display: inline-block; color: orange; transform: translateY(3px)">
+				<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 1000 1000"><g transform="matrix(25 0 0 25 500 500)"><linearGradient id="a" x1="9.858" x2="38.142" y1="9.858" y2="38.142" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#21ad64"/><stop offset="1" stop-color="#0f4e2d"/></linearGradient><path fill="url(#a)" d="M44 24c0 11.045-8.955 20-20 20S4 35.045 4 24 12.955 4 24 4s20 8.955 20 20z" transform="translate(-24 -24)"/></g><path d="M32.172 16.172 22 26.344l-5.172-5.172c-.781-.781-2.047-.781-2.828 0l-1.414 1.414c-.781.781-.781 2.047 0 2.828l8 8c.781.781 2.047.781 2.828 0l13-13c.781-.781.781-2.047 0-2.828L35 16.172c-.781-.781-2.047-.781-2.828 0z" opacity=".05" transform="matrix(25 0 0 25 -100 -100)"/><path d="m20.939 33.061-8-8c-.586-.586-.586-1.536 0-2.121l1.414-1.414c.586-.586 1.536-.586 2.121 0L22 27.051l10.525-10.525c.586-.586 1.536-.586 2.121 0l1.414 1.414c.586.586.586 1.536 0 2.121l-13 13c-.585.585-1.535.585-2.121 0z" opacity=".07" transform="matrix(25 0 0 25 -100 -100)"/><path fill="#fff" d="m21.293 32.707-8-8c-.391-.391-.391-1.024 0-1.414l1.414-1.414c.391-.391 1.024-.391 1.414 0L22 27.758l10.879-10.879c.391-.391 1.024-.391 1.414 0l1.414 1.414c.391.391.391 1.024 0 1.414l-13 13c-.39.391-1.024.391-1.414 0z" transform="matrix(25 0 0 25 -100 -100)"/></svg>
+			</span>
+			Changes Will <span style="font-weight: bold;">Automatically</span> Apply To Active Tabs!
+		</p>
+		
+		<script src="js/other/options.js"></script>
+	</body>
+</html>

@@ -1,0 +1,17 @@
+{
+	"manifest_version": 2,
+	"name": "IYCS - Improved Youtube Comment Search",
+	"short_name": "IYCS",
+	"version": "0.1",
+	"homepage_url": "https://github.com/StellarSt0rm/IYCS",
+	"author": "StellarSt0rm",
+	"permissions": ["storage"],
+	"content_scripts": [
+		{
+			"matches": ["*://*.youtube.com/*"],
+			"js": ["assets/js/injector.js", "assets/js/frontDynamic.js", "assets/js/backDynamic.js", "assets/js/other/shared.js", "assets/js/other/youtubeiFunctions.js"],
+			"css": ["assets/main.css"]
+	    	}
+	],
+	"options_ui": {"page": "assets/iycs-options.html"}
+}

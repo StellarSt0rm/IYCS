@@ -1,0 +1,2 @@
+This folder contains copies of the hardcoded icons into .svg files, for easier access for anyone wanting to get them.
+It is not directly accessed by the extension, thus is not packaged in it.

@@ -1,16 +1,9 @@
 # IYCS (&nbsp; *(Improved)* Youtube Comment Search &nbsp;)
 Improved Version Of "YCS - Youtube Comment Search" Extension.
-
+<br>
 For instructions on how to use the `youtubei/v1` API go to [CORE.md](https://github.com/StellarSt0rm/IYCS/blob/main/CORE.md)
 
-<br>
-
-Progress: (Curently Paused, i dont have much time to work on it, will continue working on it when i can)
-
-- CURRENT: First Version (Probably Bad Code)
-- NEXT: Second Version (Rework Code)
-
-<br>
+This project has been abandoned due to various reasons, mainly because I have been exploring Rust and realized how much I hate JS. In the future I could try to remake it in Rust, but for now I'll archive this repo.
 
 ## Enhancements in IYCS
 
@@ -38,8 +31,4 @@ Progress: (Curently Paused, i dont have much time to work on it, will continue w
       - "Maximized": The UI starts in a maximized state. (Default)
       - "Minimized": The UI starts in a minimized state.
 
-## TODO
-- Caching (Not Likely)
-- Support Chat Replay
-- Light Mode Support (My Eyes Are Gonna **BURN** While Making This)
-- Rework Code, Check `backup/IYCS.zip` To Understand
+### And Most Importantly: Open Source

@@ -1,0 +1,124 @@
+<div id="iycs-main">
+	<div id="iycs-head">
+		<div class="iycs_title">(Improved) Youtube Comment Search</div>
+		<div style="transform: translateY(2px);">
+			<button id="iycs-load-all" class="iycs_button">Load All</button>
+			<button id="iycs-toggle" class="iycs_button" title="Minimize IYCS">
+				<svg xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 2048 2048"><path d="M1955 1533l-931-930-931 930-90-90L1024 421l1021 1022-90 90z" fill="currentColor"></path></svg>
+			</button>
+		</div>
+	</div>
+	
+	<div id="iycs-main-container">
+		<div id="iycs-info">
+			<div id="iycs-status-comment">
+				<p class="iycs_status_field iycs_inline">
+					<span class="iycs_status_icon iycs_icon"></span>
+					Comments:
+				</p>
+				
+				<div class="iycs_inline">
+					<span class="iycs_status_count iycs_inline">0</span>
+					<div class="iycs_inline">
+						<button class="iycs_status_load iycs_inline iycs_button">Load</button>
+					</div>
+				</div>
+			</div>
+			
+			<div id="iycs-status-chat">
+				<p class="iycs_status_field iycs_inline">
+					<span class="iycs_status_icon iycs_icon"></span>
+					Chat Replay:
+				</p>
+				
+				<div class="iycs_inline">
+					<span class="iycs_status_count iycs_inline" >0</span>
+					<div class="iycs_inline">
+						<button class="iycs_status_load iycs_inline iycs_button">Load</button>
+					</div>
+				</div>
+			</div>
+			
+			<div id="iycs-status-transcript">
+				<p class="iycs_status_field iycs_inline">
+					<span class="iycs_status_icon iycs_icon"></span>
+					Transcript:
+				</p>
+				
+				<div class="iycs_inline">
+					<span class="iycs_status_count iycs_inline">0</span>
+					<div class="iycs_inline">
+						<button class="iycs_status_load iycs_inline iycs_button">Load</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="iycs-search">
+			<div>
+				<div id="iycs-searchbar" style="z-index: 2; position: relative;">
+					<input id="iycs-search-input" type="text" placeholder="Search">
+					<select id="iycs-search-select" class="iycs_button">
+						<!--<option value="comments">All Comments</option>-->
+						<option value="comments">Comments</option>
+						<!--<option value="comments">Replies</option>-->
+						<option value="chat">Chat Replay</option>
+						<option value="transcript">Transcript</option>
+						<option selected value="all">All</option>
+					</select>
+					<button id="iycs-search-button" class="iycs_button" type="button">Search</button>
+				</div>
+				
+				<div id="iycs-search-filters-container" style="z-index: 1; position: relative;">
+					<div id="iycs-search-filters">
+						<div style="white-space: nowrap; overflow-x: scroll; scrollbar-width: none; margin-right: 4px">
+							<button class="iycs_search_filter iycs_button" title="With Time Stamps">
+								Time Stamps
+							</button>
+							<button class="iycs_search_filter iycs_button" title="With Links">
+								Links
+							</button>
+							<button class="iycs_search_filter iycs_button" title="By The Author">
+								Author
+							</button>
+							<button class="iycs_search_filter iycs_button" title="Hearted By The Author">
+								❤
+							</button>
+							<button class="iycs_search_filter iycs_button" title="By Verified Users">
+								✔
+							</button>
+							<p style="display: inline-block; transform: translateY(-2px) translateX(-2px);">|</p>
+							<button class="iycs_search_filter iycs_button" title="Order By Likes">
+								Likes
+							</button>
+							<button class="iycs_search_filter iycs_button" title="Order By Replies">
+								Replies
+							</button>
+							<button class="iycs_search_filter iycs_button" title="Sort Direction">
+								<span class="iycs_icon"></span>
+							</button>
+							<p style="display: inline-block; transform: translateY(-2px) translateX(-2px);">|</p>
+							<button class="iycs_search_filter iycs_button" title="Show All">
+								All
+							</button>
+							<button class="iycs_search_filter iycs_button" title="Clear Filters And/Or Search">
+								Clear
+							</button>
+						</div>
+
+						<div style="white-space: nowrap;">
+							<p id="iycs-search-separator" style="display: inline-block; opacity: 0.4; transform: translateY(-2px) translateX(-1px);">|</p>
+							<button id="iycs-help-button" class="iycs_button" title="How To Use IYCS">
+								Help
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div id="iycs-search-results">
+				<p id="iycs-search-messages" style="font-size: 16px;"><span class="iycs_search_message">No Query</span><span class="iycs_search_message">No Results</span></p>
+			</div>
+		</div>
+	</div>
+</div>
